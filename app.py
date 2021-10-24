@@ -19,7 +19,7 @@ col2, col3 = st.columns((2))
 col1.header('Select valid NSE symbol')
 # ticker_symbol = 'HINDUNILVR.NS'
 # ticker_symbol = col1.text_area('NSE Symbol', ticker_symbol, height=10)
-ticker_stock = col1.selectbox('NSE Symbols', list(all_stock_codes.values()), default=list(all_stock_codes.values())[1])
+ticker_stock = col1.selectbox('NSE Symbols', list(all_stock_codes.values()))
 # print(all_stock_codes)
 
 all_stocks = dict(map(reversed, all_stock_codes.items()))
